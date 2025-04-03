@@ -23,7 +23,7 @@
 ## Objectifs
 
 - Développer un modèle prédictif robuste pour la détection précoce des litiges brevets.
-- Comparer des approches linéaires et non linéaires (régression, forêts, boosting, réseaux de neurones).
+- Comparer des approches linéaires et non linéaires.
 - Améliorer la sensibilité du modèle à la classe minoritaire via des techniques de rééquilibrage.
 - Proposer un outil interprétable pour les acteurs de la propriété intellectuelle.
 
@@ -74,12 +74,13 @@ Assurez-vous d’avoir installé les dépendances nécessaires (voir plus bas �
 
 Chaque script peut être exécuté indépendamment pour entraîner et tester un modèle :
 
-Modèle Script à exécuter
-Régression logistique models/reg.py
-Elastic Net models/ElasticNet.py
-XGBoost models/xgboost_model.py
-Réseau de neurones models/NeuralNetwork_Modified.py
-Random Forest models/baysar.py
+| Modèle                | Script à exécuter                  |
+| --------------------- | ---------------------------------- |
+| Régression logistique | `models/reg.py`                    |
+| Elastic Net           | `models/ElasticNet.py`             |
+| XGBoost               | `models/xgboost_model.py`          |
+| Réseau de neurones    | `models/NeuralNetwork_Modified.py` |
+| Random Forest         | `models/baysar.py`                 |
 
 Exemple : exécuter le modèle XGBoost
 
