@@ -2,14 +2,14 @@
   <img src="https://img.icons8.com/ios-filled/100/000000/artificial-intelligence.png" alt="AI Logo" width="80"/>
 </p>
 
-<h1 align="center">🔍 Modèle de Prédiction des Litiges sur les Brevets</h1>
+<h1 align="center"> Modèle de Prédiction des Litiges sur les Brevets</h1>
 
 <p align="center">
-  Un projet de Machine Learning pour anticiper les risques de litige dès le dépôt d’un brevet.
+  Ce projet vise à construire un modèle de machine learning capable d’anticiper le risque de litige associé à un brevet au moment de son dépôt. Dans un contexte d’innovation technologique rapide et d’interdépendance croissante entre inventions, cette tâche s’avère cruciale, notamment pour les PME ne disposant pas de moyens juridiques avancés.
 </p>
 
 <p align="center">
-  <a href="https://github.com/ton-org/ton-projet">
+  <a href="https://github.com/1drien/Projet-litige-des-brevets">
     <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/ton-org/ton-projet?style=social">
   </a>
   <a href="https://github.com/ton-org/ton-projet/issues">
@@ -19,14 +19,6 @@
     <img alt="GitHub license" src="https://img.shields.io/github/license/ton-org/ton-projet">
   </a>
 </p>
-
----
-
-# Modèle de Prédiction des Litiges sur les Brevets
-
-Ce projet vise à construire un modèle de machine learning capable d’anticiper le risque de litige associé à un brevet au moment de son dépôt. Dans un contexte d’innovation technologique rapide et d’interdépendance croissante entre inventions, cette tâche s’avère cruciale, notamment pour les PME ne disposant pas de moyens juridiques avancés.
-
----
 
 ## Objectifs
 
@@ -116,3 +108,31 @@ L’interface utilise le Réseau de neurones, qui est sauvegardé sous interface
 
 Le fichier de données se trouve ici :
 models/Dataset_Thuy (1).csv
+
+## Dépendances et installation
+
+Créez un environnement virtuel Python (optionnel mais recommandé) :
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Sous Windows : venv\Scripts\activate
+```
+
+Installez les dépendances avec :
+
+```bash
+pip install -r requirements.txt
+```
+
+Contenu du fichier requirements.txt :
+
+```bash
+scikit-learn>=1.2.2
+imblearn>=0.0
+xgboost>=1.7.6
+tensorflow>=2.11.0
+numpy>=1.23.5
+pandas>=1.5.3
+matplotlib>=3.7.1
+tk  # Pour l'interface graphique avec Tkinter
+```
