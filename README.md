@@ -44,7 +44,6 @@ Le jeu de données regroupe plusieurs milliers de brevets, caractérisés par :
 ## Structure du Projet
 
 ```bash
-
 PROJET_MI/
 │
 ├── interface/
@@ -60,13 +59,13 @@ PROJET_MI/
 │   ├── xgboost_model.py             # Modèle XGBoost
 │   ├── NeuralNetwork_Modified.py    # Réseau de neurones (MLP)
 │   ├── Dataset_Thuy (1).csv         # Données principales
-|   └──Dataset.csv                   # Dataset avec les variables selectionées pour le réseau de neurones
-|
+|   └── Dataset.csv                  # Dataset pour le réseau de neurones
 │
 ├── README.md
 └── .gitignore
-
 ```
+
+---
 
 ## Exécution des modèles
 
@@ -82,20 +81,21 @@ Chaque script peut être exécuté indépendamment pour entraîner et tester un 
 | Réseau de neurones    | `models/NeuralNetwork_Modified.py` |
 | Random Forest         | `models/baysar.py`                 |
 
-Exemple : exécuter le modèle XGBoost
+### Exemple : exécuter le modèle XGBoost
 
 ```bash
 python models/xgboost_model.py
-
 ```
 
 Les résultats s’affichent directement dans la console (matrice de confusion, F1-score, ratio TP/FP, etc.).
+
+---
 
 ## Interface utilisateur
 
 Une interface graphique permet de charger les caractéristiques d’un brevet et de prédire son risque de litige.
 
-Lancer l’interface :
+### Lancer l’interface :
 
 ```bash
 python interface/ProgramInterface.py
@@ -103,12 +103,16 @@ python interface/ProgramInterface.py
 
 Une fenêtre s’ouvrira pour permettre à l’utilisateur de saisir les informations d’un brevet ou de charger un fichier d’entrée.
 
-L’interface utilise le Réseau de neurones, qui est sauvegardé sous interface/model_fold_1.h5.
+> L’interface utilise le Réseau de neurones, qui est sauvegardé sous `interface/model_fold_1.h5`.
+
+---
 
 ## Données
 
-Le fichier de données se trouve ici :
-models/Dataset_Thuy (1).csv
+Le fichier de données se trouve ici :  
+`models/Dataset_Thuy (1).csv`
+
+---
 
 ## Dépendances et installation
 
@@ -125,9 +129,9 @@ Installez les dépendances avec :
 pip install -r requirements.txt
 ```
 
-Contenu du fichier requirements.txt :
+### Contenu du fichier `requirements.txt` :
 
-```bash
+```txt
 scikit-learn>=1.2.2
 imblearn>=0.0
 xgboost>=1.7.6
@@ -135,5 +139,5 @@ tensorflow>=2.11.0
 numpy>=1.23.5
 pandas>=1.5.3
 matplotlib>=3.7.1
-tk  # Pour l'interface graphique avec Tkinter
+tk
 ```
