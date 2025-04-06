@@ -35,6 +35,16 @@ Le jeu de données regroupe plusieurs milliers de brevets, caractérisés par :
 - Contenu : nombre de revendications, statut universitaire, domaine technologique
 - Cible : `Infringment` (binaire = 1 si litige, 0 sinon)
 
+## Langage utilisé
+
+Le projet a été entièrement développé en **Python**, en raison de :
+
+- son large écosystème pour le machine learning (`scikit-learn`, `tensorflow`, `xgboost`, etc.),
+- sa syntaxe claire facilitant le prototypage rapide,
+- et sa compatibilité avec des interfaces graphiques simples via `tkinter`.
+
+Ce choix garantit une solution cohérente, maintenable et accessible.
+
 ---
 
 ## Structure du Projet
