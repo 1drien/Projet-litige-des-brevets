@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/1drien/Projet-litige-des-brevets">
-    <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/ton-org/ton-projet?style=social">
+  <a href="https://github.com/1drien/Projet-litige-des-brevets/stargazers">
+    <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/1drien/Projet-litige-des-brevets?style=social">
   </a>
-  <a href="https://github.com/ton-org/ton-projet/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/ton-org/ton-projet">
+  <a href="https://github.com/1drien/Projet-litige-des-brevets/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/1drien/Projet-litige-des-brevets">
   </a>
-  <a href="https://github.com/ton-org/ton-projet/blob/main/LICENSE">
-    <img alt="GitHub license" src="https://img.shields.io/github/license/ton-org/ton-projet">
+  <a href="https://github.com/1drien/Projet-litige-des-brevets/blob/main/LICENSE">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/1drien/Projet-litige-des-brevets">
   </a>
 </p>
 
@@ -140,4 +140,6 @@ numpy>=1.23.5
 pandas>=1.5.3
 matplotlib>=3.7.1
 tk
+joblib>=1.2.0
+
 ```
