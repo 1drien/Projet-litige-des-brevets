@@ -143,3 +143,11 @@ tk
 joblib>=1.2.0
 
 ```
+
+## Aperçu de l'interface
+
+Voici un exemple de l'interface graphique permettant de prédire le risque de litige d'un brevet :
+
+<p align="center">
+  <img src="infrigement.png" alt="Aperçu Interface" width="600"/>
+</p>
