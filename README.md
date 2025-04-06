@@ -9,15 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/1drien/Projet-litige-des-brevets/stargazers">
-    <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/1drien/Projet-litige-des-brevets?style=social">
-  </a>
-  <a href="https://github.com/1drien/Projet-litige-des-brevets/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/1drien/Projet-litige-des-brevets">
-  </a>
-  <a href="https://github.com/1drien/Projet-litige-des-brevets/blob/main/LICENSE">
-    <img alt="GitHub license" src="https://img.shields.io/github/license/1drien/Projet-litige-des-brevets">
-  </a>
+  <img alt="GitHub repo stars" src="https://img.shields.io/github/stars/1drien/Projet-litige-des-brevets?style=social">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/1drien/Projet-litige-des-brevets">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/1drien/Projet-litige-des-brevets">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.10-blue.svg">
+  <img alt="Status" src="https://img.shields.io/badge/status-en%20cours-yellow">
 </p>
 
 ## Objectifs
@@ -45,24 +41,25 @@ Le jeu de données regroupe plusieurs milliers de brevets, caractérisés par :
 
 ```bash
 PROJET_MI/
-│
 ├── interface/
-|   ├── logs.txt                     # sauvegarde des brevets litigieux
-│   ├── ProgramInterface.py          # Lancement de l’interface utilisateur
-│   ├── UI_Testing_Version.py        # Version alternative de test
-│   └── model_fold_1.h5              # Modèle MLP entraîné
+│   ├── logs.txt                  # Sauvegarde des brevets prédits comme litigieux
+│   ├── ProgramInterface.py       # Lancement de l’interface utilisateur
+│   ├── UI_Testing_Version.py     # Version de test alternative
+│   └── model_fold_1.h5           # Modèle MLP entraîné
 │
 ├── models/
-│   ├── reg.py                       # Régression logistique
-│   ├── ElasticNet.py                # Modèle Elastic Net
-│   ├── baysar.py                    # Random Forest
-│   ├── xgboost_model.py             # Modèle XGBoost
-│   ├── NeuralNetwork_Modified.py    # Réseau de neurones (MLP)
-│   ├── Dataset_Thuy (1).csv         # Données principales
-|   └── Dataset.csv                  # Dataset pour le réseau de neurones
+│   ├── reg.py                    # Modèle de régression logistique
+│   ├── ElasticNet.py             # Modèle Elastic Net
+│   ├── baysar.py                 # Random Forest
+│   ├── xgboost_model.py          # Modèle XGBoost
+│   ├── NeuralNetwork_Modified.py # Réseau de neurones (MLP)
+│   ├── Dataset_Thuy (1).csv      # Données complètes
+│   └── Dataset.csv               # Dataset pour le réseau de neurones
 │
-├── README.md
-└── .gitignore
+├── requirements.txt              # Dépendances Python
+├── README.md                     # Présentation du projet
+├── .gitignore                    # Fichiers ignorés par Git
+└── assets/                       # Images / captures d'écran pour le README
 ```
 
 ---
@@ -149,5 +146,5 @@ joblib>=1.2.0
 Voici un exemple de l'interface graphique permettant de prédire le risque de litige d'un brevet :
 
 <p align="center">
-  <img src="infrigement.png" alt="Aperçu Interface" width="600"/>
+  <img src="assets/infrigement.png" alt="Aperçu Interface" width="600"/>
 </p>
