@@ -55,6 +55,7 @@ PROJET_MI/
 │   ├── logs.txt                  # Sauvegarde des brevets prédits comme litigieux
 │   ├── ProgramInterface.py       # Lancement de l’interface utilisateur
 │   ├── UI_Testing_Version.py     # Version de test alternative
+│   ├── scaler_fold_1.pkl         # Metriques du MLP pour le pourcentage
 │   └── model_fold_1.h5           # Modèle MLP entraîné
 │
 ├── models/
