@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -9,6 +8,7 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
+import joblib  # Ajout pour sauvegarder le scaler
 
 # ------------------- Chargement du dataset ------------------- #
 df = pd.read_csv("Dataset.csv")
@@ -48,6 +48,11 @@ for train_index, test_index in skf.split(X, y):
     scaler = StandardScaler()
     X_train_fold_scaled = scaler.fit_transform(X_train_fold_res)
     X_test_fold_scaled = scaler.transform(X_test_fold)
+
+    # 🔁 Sauvegarde du scaler
+    scaler_path = f"scaler_fold_{fold}.pkl"
+    joblib.dump(scaler, scaler_path)
+    print(f"Scaler fold {fold} sauvegardé sous '{scaler_path}'.")
 
     def build_model(input_dim):
         model = Sequential([
